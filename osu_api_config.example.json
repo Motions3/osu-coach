@@ -1,0 +1,11 @@
+{
+  "_help": "Copy this file to osu_api_config.json and fill it in. Get a client at https://osu.ppy.sh/home/account/edit -> OAuth -> New OAuth Application (any name; callback URL http://localhost). Only the public, read-only client-credentials grant is used. Never share the secret.",
+  "client_id": 0,
+  "client_secret": "PASTE_YOUR_CLIENT_SECRET_HERE",
+  "_help_user": "Your osu! username, or your numeric user id (the number in your profile link osu.ppy.sh/users/<id>). Leave it empty to use the account logged in to osu! on this PC.",
+  "user": "",
+  "_help_user_id": "Optional: your numeric osu! user id. If set (not 0) it wins over 'user'. Renamed accounts keep their id, so all your old names still count.",
+  "user_id": 0,
+  "_help_exclude_users": "Optional: names or ids of OTHER accounts that play on this PC (a sibling, a second account). Their replays never count as yours. Example: [\"my_brother\", 1234567]",
+  "exclude_users": []
+}

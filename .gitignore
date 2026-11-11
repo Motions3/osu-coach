@@ -1,0 +1,25 @@
+# WHITELIST: ignore everything in this folder, then allow only the app's source, tests,
+# docs, launchers and the example config. Your plays, caches, logs, settings, API secret
+# and token never get committed.
+/*
+
+!/.gitignore
+!/LICENSE
+!/*.py
+!/*.pyw
+!/*.md
+!/*.bat
+!/osu_api_config.example.json
+!/requirements*.txt
+
+# Belt and braces: personal data / secrets stay out even if a rule above matches them.
+/osu_api_config.json
+/.osu_api_token.json
+*.jsonl
+*_log.txt
+*.log
+__pycache__/
+/tosu/
+/.osu_cache/
+*.json
+!/osu_api_config.example.json
